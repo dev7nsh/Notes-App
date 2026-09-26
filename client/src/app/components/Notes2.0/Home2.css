@@ -1,0 +1,84 @@
+.folder-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: color 0.2s;
+  }
+  .folder-link:hover {
+    color: #007bff;
+  }
+  
+  .folder-card {
+    flex-shrink: 0;
+  }
+  
+  .new-folder-card:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.2s;
+  }
+  
+
+.note-card {
+  width: 240px;
+  height: 280px;
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.note-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.677); /* Enhance shadow on hover */
+}
+
+
+
+.note-title {
+  font-size: 1rem; /* Larger font for title */
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.note-content {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 12px;
+}
+
+.note-tags {
+  display: flex;
+  gap: 0.5rem; /* Space between tags */
+  flex-wrap: wrap; /* Wrap tags to next line if needed */
+}
+
+.tag {
+  background-color: #e0f7fa; /* Light teal */
+  color: #00796b; /* Dark teal */
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.875rem; /* Slightly smaller text */
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem; /* Smaller font for metadata */
+  color: #777777;
+}
+
+.is-archived,
+.is-pinned {
+  font-weight: bold;
+  color: #ff5722; /* Highlight archived/pinned notes */
+}
+
+.is-pinned {
+  color: #ffc107; /* Different color for pinned notes */
+}
+
+

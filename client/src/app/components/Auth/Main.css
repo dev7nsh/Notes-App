@@ -1,0 +1,73 @@
+.cart-container {
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-image {
+    max-width: 100px;
+}
+
+.add-to-cart-button {
+    margin-top: 10px;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #ff9800;
+}
+
+.nav-container {
+    width: 100%; /* Make it span the entire width of your navbar */
+    background-color: #333; /* Adjust as per your navbar */
+    padding: 10px;
+    position: relative;
+  }
+  
+  .profile-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .list {
+    display: none;
+    position: absolute;
+    top: 30px; /* Adjust to move the dropdown below the image */
+    right: 0;  /* Aligns the list to the right edge of the container */
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    z-index: 1;
+    width: 150px; /* Control the width as per your design */
+    max-width: 100%; /* Ensures it does not exceed the navbar's width */
+  }
+  
+  .profile-container:hover .list {
+    display: block;
+  }
+  
+  .list li, .list button {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .list li:hover, .list button:hover {
+    color: #ccc;
+  }
+  

@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #F5F5F5; /* Light background color */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icons i {
+    font-size: 20px;
+  }
+  
+  .notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .note {
+    width: 240px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .note-content {
+    margin-bottom: 10px;
+  }
+  
+  .note-content h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .note-content p {
+    margin: 0;
+    color: #888;
+    line-height: 1.6;
+  }
+  
+  .add-note {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-note i {
+    font-size: 24px;
+  }
